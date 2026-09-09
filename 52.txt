@@ -1,0 +1,14 @@
+n = int(input("Enter number: "))
+
+while n != 1 and n != 4:
+    total = 0
+    while n > 0:
+        d = n % 10
+        total += d * d
+        n //= 10
+    n = total
+
+if n == 1:
+    print("Happy Number")
+else:
+    print("Not Happy Number")
